@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #020202;
+    color: #e2e8f0;
+    font-family: 'Chakra Petch', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom Stark Cyber Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050d0a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #00f5a0;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00d282;
+  }
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.neon-border {
+  border: 1px solid #00f5a0;
+  box-shadow: 0 0 15px rgba(0, 245, 160, 0.25), inset 0 0 10px rgba(0, 245, 160, 0.1);
+}
+
+.neon-border-cyan {
+  border: 1px solid #00e5ff;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.25), inset 0 0 10px rgba(0, 229, 255, 0.1);
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px rgba(0, 245, 160, 0.7), 0 0 20px rgba(0, 245, 160, 0.4);
+}
+
+.neon-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.7), 0 0 20px rgba(0, 229, 255, 0.4);
+}
+
+/* Cyber grid background */
+.cyber-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 245, 160, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 245, 160, 0.04) 1px, transparent 1px);
+}
+
+/* Scanline effect */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 245, 160, 0.025) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 4px, 6px 100%;
+}
